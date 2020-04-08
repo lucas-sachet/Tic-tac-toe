@@ -91,7 +91,7 @@ class Game extends React.Component {
 
     const moves = history.map((step, move) => {
       const desc = move ?
-        'Voltar para o movimento #' + move :
+        'Voltar para o movimento = ' + move :
         'Reiniciar o jogo';
       return (
         <li key={move}>
@@ -116,7 +116,7 @@ class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <div className="game-status">{status}</div>
           <ol>{moves}</ol>
         </div>
       </div>
